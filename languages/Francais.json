@@ -1,0 +1,4930 @@
+{
+    "title": "Consentement éclairé",
+    "terms": {
+        "basic": [
+            "Level",
+            "Lv",
+            "HP",
+            "HP",
+            "MP",
+            "MP",
+            "TP",
+            "TP",
+            "EXP",
+            "EXP"
+        ],
+        "commands": [
+            "Fight",
+            "Escape",
+            "Attack",
+            "Guard",
+            "Item",
+            "Skill",
+            "Equip",
+            "Status",
+            "Formation",
+            "Save",
+            "Game End",
+            "Options",
+            "Weapon",
+            "Armor",
+            "Key Item",
+            "Equip",
+            "Optimize",
+            "Clear",
+            "Nouvelle partie",
+            "Continue",
+            null,
+            "To Title",
+            "Cancel",
+            null,
+            "Buy",
+            "Sell"
+        ],
+        "params": [
+            "Max HP",
+            "Max MP",
+            "Attack",
+            "Defense",
+            "M.Attack",
+            "M.Defense",
+            "Agility",
+            "Luck",
+            "Hit",
+            "Evasion"
+        ],
+        "messages": {
+            "actionFailure": "There was no effect on %1!",
+            "actorDamage": "%1 took %2 damage!",
+            "actorDrain": "%1 was drained of %2 %3!",
+            "actorGain": "%1 gained %2 %3!",
+            "actorLoss": "%1 lost %2 %3!",
+            "actorNoDamage": "%1 took no damage!",
+            "actorNoHit": "Miss! %1 took no damage!",
+            "actorRecovery": "%1 recovered %2 %3!",
+            "alwaysDash": "Always Dash",
+            "bgmVolume": "BGM Volume",
+            "bgsVolume": "BGS Volume",
+            "buffAdd": "%1's %2 went up!",
+            "buffRemove": "%1's %2 returned to normal!",
+            "commandRemember": "Command Remember",
+            "counterAttack": "%1 counterattacked!",
+            "criticalToActor": "A painful blow!!",
+            "criticalToEnemy": "An excellent hit!!",
+            "debuffAdd": "%1's %2 went down!",
+            "defeat": "%1 was defeated.",
+            "emerge": "%1 emerged!",
+            "enemyDamage": "%1 took %2 damage!",
+            "enemyDrain": "%1 was drained of %2 %3!",
+            "enemyGain": "%1 gained %2 %3!",
+            "enemyLoss": "%1 lost %2 %3!",
+            "enemyNoDamage": "%1 took no damage!",
+            "enemyNoHit": "Miss! %1 took no damage!",
+            "enemyRecovery": "%1 recovered %2 %3!",
+            "escapeFailure": "However, it was unable to escape!",
+            "escapeStart": "%1 has started to escape!",
+            "evasion": "%1 evaded the attack!",
+            "expNext": "To Next %1",
+            "expTotal": "Current %1",
+            "file": "File",
+            "levelUp": "%1 is now %2 %3!",
+            "loadMessage": "Load which file?",
+            "magicEvasion": "%1 nullified the magic!",
+            "magicReflection": "%1 reflected the magic!",
+            "meVolume": "ME Volume",
+            "obtainExp": "%1 %2 received!",
+            "obtainGold": "%1\\G found!",
+            "obtainItem": "%1 found!",
+            "obtainSkill": "%1 learned!",
+            "partyName": "%1's Party",
+            "possession": "Possession",
+            "preemptive": "%1 got the upper hand!",
+            "saveMessage": "Save to which file?",
+            "seVolume": "SE Volume",
+            "substitute": "%1 protected %2!",
+            "surprise": "%1 was surprised!",
+            "useItem": "%1 uses %2!",
+            "victory": "%1 was victorious!"
+        }
+    },
+    "equip_types": [
+        "",
+        "Weapon",
+        "Shield",
+        "Head",
+        "Body",
+        "Accessory"
+    ],
+    "skill_types": [
+        "",
+        "Magic",
+        "Special"
+    ],
+    "weapon_types": [
+        "",
+        "Dagger",
+        "Sword",
+        "Flail",
+        "Axe",
+        "Whip",
+        "Cane",
+        "Bow",
+        "Crossbow",
+        "Gun",
+        "Claw",
+        "Glove",
+        "Spear"
+    ],
+    "actors": [
+        {
+            "name": "Raphaëll",
+            "nickname": "Rafiki",
+            "profile": ""
+        },
+        {
+            "name": "Erwan",
+            "nickname": "Erwanouille",
+            "profile": ""
+        },
+        {
+            "name": "",
+            "nickname": "",
+            "profile": ""
+        },
+        {
+            "name": "",
+            "nickname": "",
+            "profile": ""
+        }
+    ],
+    "armors": [
+        {
+            "name": "Shield",
+            "description": ""
+        },
+        {
+            "name": "Hat",
+            "description": ""
+        },
+        {
+            "name": "Cloth",
+            "description": ""
+        },
+        {
+            "name": "Ring",
+            "description": ""
+        }
+    ],
+    "classes": [
+        "Hero",
+        "Warrior",
+        "Mage",
+        "Priest",
+        "Raph",
+        "Erwan"
+    ],
+    "common_events": [
+        {
+            "messages": []
+        },
+        {
+            "messages": []
+        },
+        {
+            "messages": []
+        },
+        {
+            "messages": []
+        }
+    ],
+    "enemies": [
+        "Bat",
+        "Slime",
+        "Orc",
+        "Minotaur"
+    ],
+    "items": [
+        {
+            "name": "Potion",
+            "description": ""
+        },
+        {
+            "name": "Magic Water",
+            "description": ""
+        },
+        {
+            "name": "Dispel Herb",
+            "description": ""
+        },
+        {
+            "name": "Stimulant",
+            "description": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Attack",
+            "description": "",
+            "message1": " attacks!",
+            "message2": ""
+        },
+        {
+            "name": "Guard",
+            "description": "",
+            "message1": " guards.",
+            "message2": ""
+        },
+        {
+            "name": "Dual Attack",
+            "description": "",
+            "message1": " attacks!",
+            "message2": ""
+        },
+        {
+            "name": "Double Attack",
+            "description": "",
+            "message1": " attacks!",
+            "message2": ""
+        },
+        {
+            "name": "Triple Attack",
+            "description": "",
+            "message1": " attacks!",
+            "message2": ""
+        },
+        {
+            "name": "Escape",
+            "description": "",
+            "message1": " flees.",
+            "message2": ""
+        },
+        {
+            "name": "Wait",
+            "description": "",
+            "message1": " waits.",
+            "message2": ""
+        },
+        {
+            "name": "Heal",
+            "description": "",
+            "message1": " casts %1!",
+            "message2": ""
+        },
+        {
+            "name": "Fire",
+            "description": "",
+            "message1": " casts %1!",
+            "message2": ""
+        },
+        {
+            "name": "Spark",
+            "description": "",
+            "message1": " casts %1!",
+            "message2": ""
+        }
+    ],
+    "states": [
+        {
+            "name": "Knockout",
+            "message1": " has fallen!",
+            "message2": " is slain!",
+            "message3": "",
+            "message4": " revives!"
+        },
+        {
+            "name": "Guard",
+            "description": "",
+            "message1": "",
+            "message2": "",
+            "message3": "",
+            "message4": ""
+        },
+        {
+            "name": "Immortal",
+            "description": "",
+            "message1": "",
+            "message2": "",
+            "message3": "",
+            "message4": ""
+        },
+        {
+            "name": "Poison",
+            "message1": " is poisoned!",
+            "message2": " is poisoned!",
+            "message3": "",
+            "message4": " is no longer poisoned!"
+        },
+        {
+            "name": "Blind",
+            "message1": " is blinded!",
+            "message2": " is blinded!",
+            "message3": "",
+            "message4": " is no longer blinded!"
+        },
+        {
+            "name": "Silence",
+            "message1": " is silenced!",
+            "message2": " is silenced!",
+            "message3": "",
+            "message4": " is no longer silenced!"
+        },
+        {
+            "name": "Rage",
+            "message1": " is enraged!",
+            "message2": " is enraged!",
+            "message3": "",
+            "message4": " is no longer enraged!"
+        },
+        {
+            "name": "Confusion",
+            "message1": " is confused!",
+            "message2": " is confused!",
+            "message3": "",
+            "message4": " is no longer confused!"
+        },
+        {
+            "name": "Fascination",
+            "message1": " is fascinated!",
+            "message2": " is fascinated!",
+            "message3": "",
+            "message4": " is no longer fascinated!"
+        },
+        {
+            "name": "Sleep",
+            "message1": " falls asleep!",
+            "message2": " falls asleep!",
+            "message3": " is sleeping.",
+            "message4": " wakes up!"
+        }
+    ],
+    "troops": [
+        {
+            "name": "Bat*2",
+            "pages": [
+                []
+            ]
+        },
+        {
+            "name": "Slime*2",
+            "pages": [
+                []
+            ]
+        },
+        {
+            "name": "Orc",
+            "pages": [
+                []
+            ]
+        },
+        {
+            "name": "Minotaur",
+            "pages": [
+                []
+            ]
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Sword",
+            "description": ""
+        },
+        {
+            "name": "Axe",
+            "description": ""
+        },
+        {
+            "name": "Cane",
+            "description": ""
+        },
+        {
+            "name": "Bow",
+            "description": ""
+        }
+    ],
+    "map_data": {
+        "MAP001": [
+            {
+                "event": 2,
+                "page": 0,
+                "index": 6,
+                "parameters": [
+                    "Bienvenue Raphaëll! Assieds-toi."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 8,
+                "parameters": [
+                    "Ton médecin de famille t'a prescrit une ligature des trompes. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 9,
+                "parameters": [
+                    "Peux-tu me dire pourquoi tu veux cette méthode "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 10,
+                "parameters": [
+                    "de contraception spécifiquement?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 11,
+                "parameters": [
+                    [
+                        "Réduire ma charge mentale",
+                        "Position politique"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 14,
+                "parameters": [
+                    "Je sais que je ne veux pas d'enfant "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 15,
+                "parameters": [
+                    "depuis l'adolescence. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 17,
+                "parameters": [
+                    "Je ne vois pas pourquoi je garderais ma fertilité, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 18,
+                "parameters": [
+                    "sachant que je n'en voudrai jamais."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 20,
+                "parameters": [
+                    "Ça me donne une charge mentale énorme "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 21,
+                "parameters": [
+                    "sans rien en retour, donc j'aimerais "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 22,
+                "parameters": [
+                    "ne plus jamais avoir à y penser."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 26,
+                "parameters": [
+                    "Je sais que je ne veux pas d'enfant "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 27,
+                "parameters": [
+                    "depuis l'adolescence. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 29,
+                "parameters": [
+                    "Ça me ferait sentir bien d'avoir un corps "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 30,
+                "parameters": [
+                    "en accordance avec la vie que je veux."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 32,
+                "parameters": [
+                    "Et ça enverrait un message clair à quiconque "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 33,
+                "parameters": [
+                    "pense que je changerai un jour d'idée, ou "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 34,
+                "parameters": [
+                    "que les personnes assignées filles veulent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 35,
+                "parameters": [
+                    "en fait toutes des enfants."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 37,
+                "parameters": [
+                    "Ça me protégerait de tout changement "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 38,
+                "parameters": [
+                    "dans les droits reproductifs, ce qui est "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 39,
+                "parameters": [
+                    "tristement un risque bien présent."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 43,
+                "parameters": [
+                    "This is not an impulsive decision. I gave "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 44,
+                "parameters": [
+                    "myself until I was at least 25 to make up "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 45,
+                "parameters": [
+                    "my mind about it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 47,
+                "parameters": [
+                    "I know it might sound silly, but I picked "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 48,
+                "parameters": [
+                    "that age partly because that’s around when "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 49,
+                "parameters": [
+                    "the brain stops developing."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 51,
+                "parameters": [
+                    "Also, I figured no one would take me "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 52,
+                "parameters": [
+                    "seriously before that age."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 54,
+                "parameters": [
+                    "Although I have to say, I had little hope "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 55,
+                "parameters": [
+                    "until recently that any health practitioner "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 56,
+                "parameters": [
+                    "would take me seriously before I was well "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 57,
+                "parameters": [
+                    "into my 40s."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 59,
+                "parameters": [
+                    "I hear you. Don’t worry, here, age is not "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 60,
+                "parameters": [
+                    "an issue."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 62,
+                "parameters": [
+                    "(I know! That’s why I picked her. I found "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 63,
+                "parameters": [
+                    "her on a childfree-friendly doctors list "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 64,
+                "parameters": [
+                    "on reddit)"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 66,
+                "parameters": [
+                    "There are a few things to consider before "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 67,
+                "parameters": [
+                    "we move forward with that decision."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 69,
+                "parameters": [
+                    "For instance, what if you end up with "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 70,
+                "parameters": [
+                    "someone who wants children?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 71,
+                "parameters": [
+                    [
+                        "I'm not their incubator",
+                        "We would break up",
+                        "There are other ways"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 74,
+                "parameters": [
+                    "Oh, hum, no, that's not what I was trying "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 75,
+                "parameters": [
+                    "to imply of course."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 77,
+                "parameters": [
+                    "I understand why you would take offense in "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 78,
+                "parameters": [
+                    "that question. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 80,
+                "parameters": [
+                    "Just so you know, I'm asking precisely "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 81,
+                "parameters": [
+                    "because it's a situation I've seen happen "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 82,
+                "parameters": [
+                    "before. More than once."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 84,
+                "parameters": [
+                    "And then, it's an expensive and troublesome "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 85,
+                "parameters": [
+                    "medical hassle, trying to get the person"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 86,
+                "parameters": [
+                    "pregnant through IVF or something of the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 87,
+                "parameters": [
+                    "likes. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 89,
+                "parameters": [
+                    "And it's heartbreaking when it doesn't work."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 93,
+                "parameters": [
+                    "It's a pretty big dealbreaker for me. I'm"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 94,
+                "parameters": [
+                    "childfree, regardless of what my partner "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 95,
+                "parameters": [
+                    "wants."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 97,
+                "parameters": [
+                    "I actually just probably wouldn't get with"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 98,
+                "parameters": [
+                    "them it the first place."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 100,
+                "parameters": [
+                    "Yes of course."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 102,
+                "parameters": [
+                    "Although, my thoughts have evolved on that"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 103,
+                "parameters": [
+                    "in the last few years. I'm polyamorous, and"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 104,
+                "parameters": [
+                    "while I wouldn't have my own children, I "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 105,
+                "parameters": [
+                    "don't mind if a partner wants to have"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 107,
+                "parameters": [
+                    "children with someone else. Or by themself."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 109,
+                "parameters": [
+                    "...I've never seen that in my practice, but "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 110,
+                "parameters": [
+                    "if that makes sense to you, that's all that "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 111,
+                "parameters": [
+                    "matters."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 115,
+                "parameters": [
+                    "Even if I did change my mind, which I doubt"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 116,
+                "parameters": [
+                    "I ever would, there are other ways to have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 117,
+                "parameters": [
+                    "children which are just as valid. I could"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 118,
+                "parameters": [
+                    "adopt. Or foster kids."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 120,
+                "parameters": [
+                    "Of course! There is more than one way to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 121,
+                "parameters": [
+                    "start a family."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 123,
+                "parameters": [
+                    "(I already have a family, and that wording "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 124,
+                "parameters": [
+                    "is pretty amatonormative and annoys me, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 125,
+                "parameters": [
+                    "but I get what she means and it comes from "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 126,
+                "parameters": [
+                    "a good place)."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 128,
+                "parameters": [
+                    "(Note from Raphaëll from the future: my thoughts "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 129,
+                "parameters": [
+                    "regarding adoption changed a lot, and I think adoption"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 130,
+                "parameters": [
+                    "is an ethical minefield. I would not go down that route"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 131,
+                "parameters": [
+                    "even if I wanted kids)"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 135,
+                "parameters": [
+                    "I only perform a non-reversible version of"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 136,
+                "parameters": [
+                    "this surgery on my patients. In the regular"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 137,
+                "parameters": [
+                    "version, we cut and tie the tubes so that"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 138,
+                "parameters": [
+                    "the egg cannot get to the womb and cannot"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 140,
+                "parameters": [
+                    "be fertilized. It's hard to reverse, but"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 141,
+                "parameters": [
+                    "not entirely impossible. Some patients put"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 142,
+                "parameters": [
+                    "too much trust into the possibility of"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 143,
+                "parameters": [
+                    "reversing it one day."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 145,
+                "parameters": [
+                    "Then they change their mind, and we're"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 146,
+                "parameters": [
+                    "unable to reverse it, and it becomes a"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 147,
+                "parameters": [
+                    "much harder process to make them pregnant."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 149,
+                "parameters": [
+                    "I want my patients to be 100% sure they"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 150,
+                "parameters": [
+                    "want it, and I offer no way back. My"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 151,
+                "parameters": [
+                    "version of the procedure completely get"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 152,
+                "parameters": [
+                    "rid of the tubes."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 154,
+                "parameters": [
+                    "Are you ok with this?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 155,
+                "parameters": [
+                    [
+                        "Yes, it would give me dysphoria",
+                        "Yes, I'm an antinatalist"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 158,
+                "parameters": [
+                    "Beyond not wanting children, I absolutely"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 159,
+                "parameters": [
+                    "do not want a pregnancy. I'm non-binary, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 160,
+                "parameters": [
+                    "and I can't imagine an experience that "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 161,
+                "parameters": [
+                    "would be more dysphoria-inducing."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 163,
+                "parameters": [
+                    "I'm 99% sure I don't want children."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 164,
+                "parameters": [
+                    "I'm 100% sure I don't want to be pregnant"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 165,
+                "parameters": [
+                    "ever."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 167,
+                "parameters": [
+                    "Oh I didn't know about that. I'll write a"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 168,
+                "parameters": [
+                    "note in your record that you're non-binary "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 169,
+                "parameters": [
+                    "and to not use gendered titles with you, if"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 170,
+                "parameters": [
+                    "that's what you'd prefer."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 172,
+                "parameters": [
+                    "Yes, I'd very much like that. Thank you"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 173,
+                "parameters": [
+                    "for offering."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 175,
+                "parameters": [
+                    "I definitely see how a pregnancy would be"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 176,
+                "parameters": [
+                    "a very undesired experience for you."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 180,
+                "parameters": [
+                    "So this is a pretty big topic to go over,"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 181,
+                "parameters": [
+                    "but I'm very much antinatalist. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 183,
+                "parameters": [
+                    "I think there's no harm done in *not* "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 184,
+                "parameters": [
+                    "bringing someome to life, but there's"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 185,
+                "parameters": [
+                    "potential harm done in bringing someone to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 186,
+                "parameters": [
+                    "life. It's not a great gamble."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 188,
+                "parameters": [
+                    "Plus, you can't get the person's consent to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 189,
+                "parameters": [
+                    "create them. I know, I know, it's a"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 190,
+                "parameters": [
+                    "weird ethical stance, but having children "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 191,
+                "parameters": [
+                    "sounds like a questionable choice to me."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 193,
+                "parameters": [
+                    "It is a peculiar stance, but I hear you and"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 194,
+                "parameters": [
+                    "it does sound like you're pretty set on not"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 195,
+                "parameters": [
+                    "having children."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 199,
+                "parameters": [
+                    "There's one last thing I want us to go "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 200,
+                "parameters": [
+                    "over."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 202,
+                "parameters": [
+                    "There are other contraception methods that "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 203,
+                "parameters": [
+                    "are very effective, and don't require you "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 204,
+                "parameters": [
+                    "to undergo an invasive, irreversible "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 205,
+                "parameters": [
+                    "surgery."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 207,
+                "parameters": [
+                    "While I'm certainly not opposed to proceed "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 208,
+                "parameters": [
+                    "with a salpingectomy, I want my patients to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 209,
+                "parameters": [
+                    "know the other options, to have explored "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 210,
+                "parameters": [
+                    "them already and make an enlighten choice."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 212,
+                "parameters": [
+                    "What other methods have you tried?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 213,
+                "parameters": [
+                    [
+                        "Condoms",
+                        "Birth Pill",
+                        "IUD"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 216,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 217,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 219,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 220,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 221,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 223,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 224,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 226,
+                "parameters": [
+                    "That makes sense! If you want more effecti-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 227,
+                "parameters": [
+                    "veness, you could just combine it with a"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 228,
+                "parameters": [
+                    "non-permanent method like the pill or an "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 229,
+                "parameters": [
+                    "IUD though."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 230,
+                "parameters": [
+                    [
+                        "The pill sucks",
+                        "IUDs suck"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 233,
+                "parameters": [
+                    "I've used the pill for a while. It had"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 234,
+                "parameters": [
+                    "disastrous side-effets on my mood and my"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 235,
+                "parameters": [
+                    "overall mental health."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 237,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 238,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 240,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 241,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 243,
+                "parameters": [
+                    "There is one last convenient option that "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 244,
+                "parameters": [
+                    "seems to be best of both worlds for you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 245,
+                "parameters": [
+                    "an IUD."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 247,
+                "parameters": [
+                    "It's one of the most reliable birth control "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 248,
+                "parameters": [
+                    "out there, and you wouldn't have the side-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 249,
+                "parameters": [
+                    "effects that come with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 251,
+                "parameters": [
+                    "So with a copper IUD, your cramps and blee-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 252,
+                "parameters": [
+                    "ding from your periods intensify."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 254,
+                "parameters": [
+                    "I don't have very painful periods or a huge "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 255,
+                "parameters": [
+                    "flow, but I'd still rather not make them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 256,
+                "parameters": [
+                    "more inconvenient if I can."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 258,
+                "parameters": [
+                    "And given my history with the birth control "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 259,
+                "parameters": [
+                    "pill, I wouldn't give hormonal IUDs a try."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 261,
+                "parameters": [
+                    "I have to say, the amount of hormones found "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 262,
+                "parameters": [
+                    "in an IUD are very very low. You have low "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 263,
+                "parameters": [
+                    "chances of experiencing the same problems."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 265,
+                "parameters": [
+                    "That's good to know. I'm pretty set on "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 266,
+                "parameters": [
+                    "getting rid of my tubes though. I would be "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 267,
+                "parameters": [
+                    "very affirming for me to have a permanent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 268,
+                "parameters": [
+                    "method of contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 270,
+                "parameters": [
+                    "And I would never have to think about it "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 271,
+                "parameters": [
+                    "again."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 273,
+                "parameters": [
+                    "Ok. Here's what I'll offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 275,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 276,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 277,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 278,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 280,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 281,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 282,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 283,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 285,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 286,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 288,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 289,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 290,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 291,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 293,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 294,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 295,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 297,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 299,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 303,
+                "parameters": [
+                    "So with a copper IUD, your cramps and blee-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 304,
+                "parameters": [
+                    "ding from your periods intensify."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 306,
+                "parameters": [
+                    "I don't have very painful periods or a huge "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 307,
+                "parameters": [
+                    "flow, but I'd still rather not make them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 308,
+                "parameters": [
+                    "more inconvenient if I can."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 310,
+                "parameters": [
+                    "And what about a hormonal IUD?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 312,
+                "parameters": [
+                    "Eh, I had a very horrible experience with "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 313,
+                "parameters": [
+                    "the birth control pill, and I'd rather "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 314,
+                "parameters": [
+                    "avoid any contraception that is hormone-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 315,
+                "parameters": [
+                    "based."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 317,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 318,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 320,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 321,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 323,
+                "parameters": [
+                    "Although I have to say, the amount of "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 324,
+                "parameters": [
+                    "hormones found in an IUD are very very low. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 325,
+                "parameters": [
+                    "You have low chances of experiencing the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 326,
+                "parameters": [
+                    "same problems, whatever they were."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 328,
+                "parameters": [
+                    "That's good to know. I'm pretty set on "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 329,
+                "parameters": [
+                    "getting rid of my tubes though. I would be "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 330,
+                "parameters": [
+                    "very affirming for me to have a permanent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 331,
+                "parameters": [
+                    "method of contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 333,
+                "parameters": [
+                    "And I would never have to think about it "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 334,
+                "parameters": [
+                    "again."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 336,
+                "parameters": [
+                    "Ok. Here's what I'll offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 338,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 339,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 340,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 341,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 343,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 344,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 345,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 346,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 348,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 349,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 351,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 352,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 353,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 354,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 356,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 357,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 358,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 360,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 362,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 368,
+                "parameters": [
+                    "I've used the pill for a while. It had"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 369,
+                "parameters": [
+                    "disastrous side-effets on my mood and my"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 370,
+                "parameters": [
+                    "overall mental health."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 372,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 373,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 375,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 376,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 378,
+                "parameters": [
+                    "What about other contraception methods?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 379,
+                "parameters": [
+                    [
+                        "Condoms",
+                        "IUDs"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 382,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 383,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 385,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 386,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 387,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 389,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 390,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 392,
+                "parameters": [
+                    "And you did try using the pill, which is "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 393,
+                "parameters": [
+                    "more reliable."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 395,
+                "parameters": [
+                    "There is one last convenient option that "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 396,
+                "parameters": [
+                    "seems to be best of both worlds for you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 397,
+                "parameters": [
+                    "an IUD."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 399,
+                "parameters": [
+                    "It's one of the most reliable birth control "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 400,
+                "parameters": [
+                    "out there, and you wouldn't have the side-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 401,
+                "parameters": [
+                    "effects that come with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 403,
+                "parameters": [
+                    "So with a copper IUD, your cramps and blee-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 404,
+                "parameters": [
+                    "ding from your periods intensify."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 406,
+                "parameters": [
+                    "I don't have very painful periods or a huge "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 407,
+                "parameters": [
+                    "flow, but I'd still rather not make them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 408,
+                "parameters": [
+                    "more inconvenient if I can."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 410,
+                "parameters": [
+                    "And given my history with the birth control "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 411,
+                "parameters": [
+                    "pill, I wouldn't give hormonal IUDs a try."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 413,
+                "parameters": [
+                    "I have to say, the amount of hormones found "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 414,
+                "parameters": [
+                    "in an IUD are very very low. You have low "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 415,
+                "parameters": [
+                    "chances of experiencing the same problems."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 417,
+                "parameters": [
+                    "That's good to know. I'm pretty set on "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 418,
+                "parameters": [
+                    "getting rid of my tubes though. I would be "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 419,
+                "parameters": [
+                    "very affirming for me to have a permanent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 420,
+                "parameters": [
+                    "method of contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 422,
+                "parameters": [
+                    "And I would never have to think about it "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 423,
+                "parameters": [
+                    "again."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 425,
+                "parameters": [
+                    "Ok. Here's what I'll offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 427,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 428,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 429,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 430,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 432,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 433,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 434,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 435,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 437,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 438,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 440,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 441,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 442,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 443,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 445,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 446,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 447,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 449,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 451,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 455,
+                "parameters": [
+                    "So with a copper IUD, your cramps and blee-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 456,
+                "parameters": [
+                    "ding from your periods intensify."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 458,
+                "parameters": [
+                    "I don't have very painful periods or a huge "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 459,
+                "parameters": [
+                    "flow, but I'd still rather not make them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 460,
+                "parameters": [
+                    "more inconvenient if I can."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 462,
+                "parameters": [
+                    "And given my history with the birth control "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 463,
+                "parameters": [
+                    "pill, I wouldn't give hormonal IUDs a try."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 465,
+                "parameters": [
+                    "I have to say, the amount of hormones found "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 466,
+                "parameters": [
+                    "in an IUD are very very low. You have low "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 467,
+                "parameters": [
+                    "chances of experiencing the same problems."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 469,
+                "parameters": [
+                    "That's good to know. I'm pretty set on "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 470,
+                "parameters": [
+                    "getting rid of my tubes though. I would be "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 471,
+                "parameters": [
+                    "very affirming for me to have a permanent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 472,
+                "parameters": [
+                    "method of contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 474,
+                "parameters": [
+                    "And I would never have to think about it "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 475,
+                "parameters": [
+                    "again."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 477,
+                "parameters": [
+                    "There's still one method I'd like to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 478,
+                "parameters": [
+                    "discuss with you. What about the most"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 479,
+                "parameters": [
+                    "accessible one: condoms?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 481,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 482,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 484,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 485,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 486,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 488,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 489,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 491,
+                "parameters": [
+                    "It's true that while it's very effective, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 492,
+                "parameters": [
+                    "it is not the *most* reliable method out "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 493,
+                "parameters": [
+                    "there."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 495,
+                "parameters": [
+                    "It seems like you've thought thoroughly "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 496,
+                "parameters": [
+                    "about it. I'd still like to revisit IUDs, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 497,
+                "parameters": [
+                    "since it seems like you haven't given "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 498,
+                "parameters": [
+                    "hormonal IUD a fair chance."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 500,
+                "parameters": [
+                    "Here's what I'd like to offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 502,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 503,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 504,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 505,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 507,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 508,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 509,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 510,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 512,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 513,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 515,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 516,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 517,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 518,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 520,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 521,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 522,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 524,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 526,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 532,
+                "parameters": [
+                    "So with a copper IUD, your cramps and blee-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 533,
+                "parameters": [
+                    "ding from your periods intensify."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 535,
+                "parameters": [
+                    "I don't have very painful periods or a huge "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 536,
+                "parameters": [
+                    "flow, but I'd still rather not make them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 537,
+                "parameters": [
+                    "more inconvenient if I can."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 539,
+                "parameters": [
+                    "Yes, some of my patients do find them "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 540,
+                "parameters": [
+                    "to be an annoyance. What about an hormonal "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 541,
+                "parameters": [
+                    "one? Or other methods of contraception?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 542,
+                "parameters": [
+                    [
+                        "Hormonal IUDs",
+                        "The pill",
+                        "Condoms"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 545,
+                "parameters": [
+                    "Eh, I had a very horrible experience with "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 546,
+                "parameters": [
+                    "the birth control pill, and I'd rather "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 547,
+                "parameters": [
+                    "avoid any contraception that is hormone-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 548,
+                "parameters": [
+                    "based."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 550,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 551,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 553,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 554,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 556,
+                "parameters": [
+                    "Although I have to say, the amount of "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 557,
+                "parameters": [
+                    "hormones found in an IUD are very very low. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 558,
+                "parameters": [
+                    "You have low chances of experiencing the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 559,
+                "parameters": [
+                    "same problems, whatever they were."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 561,
+                "parameters": [
+                    "That's good to know. I'd still prefer a "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 562,
+                "parameters": [
+                    "permanent method where I never have to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 563,
+                "parameters": [
+                    "think again about contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 565,
+                "parameters": [
+                    "Yes. Let's explore some other options "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 566,
+                "parameters": [
+                    "before we settle on that."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 568,
+                "parameters": [
+                    "I hear that the pill is also out of the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 569,
+                "parameters": [
+                    "question for you. What about the most "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 570,
+                "parameters": [
+                    "accessible option out there: condoms?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 572,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 573,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 575,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 576,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 577,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 579,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 580,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 582,
+                "parameters": [
+                    "It's true that while it's very effective, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 583,
+                "parameters": [
+                    "it is not the *most* reliable method out "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 584,
+                "parameters": [
+                    "there."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 586,
+                "parameters": [
+                    "It seems like you've thought thoroughly "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 587,
+                "parameters": [
+                    "about it. I'd still like to revisit IUDs, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 588,
+                "parameters": [
+                    "since it seems like you haven't given "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 589,
+                "parameters": [
+                    "hormonal IUD a fair chance."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 591,
+                "parameters": [
+                    "Here's what I'd like to offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 593,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 594,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 595,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 596,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 598,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 599,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 600,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 601,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 603,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 604,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 606,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 607,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 608,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 609,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 611,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 612,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 613,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 615,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 617,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 621,
+                "parameters": [
+                    "I've used the pill for a while. It had"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 622,
+                "parameters": [
+                    "disastrous side-effets on my mood and my"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 623,
+                "parameters": [
+                    "overall mental health."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 625,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 626,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 628,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 629,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 631,
+                "parameters": [
+                    "Yes. And for that same reason, I won't "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 632,
+                "parameters": [
+                    "consider getting a hormonal IUD, or using "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 633,
+                "parameters": [
+                    "anything that is hormone-based."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 635,
+                "parameters": [
+                    "I can see how that would be a hard limit "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 636,
+                "parameters": [
+                    "for you."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 638,
+                "parameters": [
+                    "Although I have to say, the amount of "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 639,
+                "parameters": [
+                    "hormones found in an IUD are very very low. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 640,
+                "parameters": [
+                    "You have low chances of experiencing the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 641,
+                "parameters": [
+                    "same problems, whatever they were."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 643,
+                "parameters": [
+                    "That's good to know. I'd still prefer a "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 644,
+                "parameters": [
+                    "permanent method where I never have to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 645,
+                "parameters": [
+                    "think again about contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 647,
+                "parameters": [
+                    "There's still one method I'd like to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 648,
+                "parameters": [
+                    "discuss with you. What about the most"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 649,
+                "parameters": [
+                    "accessible one: condoms?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 651,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 652,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 654,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 655,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 656,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 658,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 659,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 661,
+                "parameters": [
+                    "It's true that while it's very effective, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 662,
+                "parameters": [
+                    "it is not the *most* reliable method out "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 663,
+                "parameters": [
+                    "there."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 665,
+                "parameters": [
+                    "It seems like you've thought thoroughly "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 666,
+                "parameters": [
+                    "about it. I'd still like to revisit IUDs, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 667,
+                "parameters": [
+                    "since it seems like you haven't given "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 668,
+                "parameters": [
+                    "hormonal IUD a fair chance."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 670,
+                "parameters": [
+                    "Here's what I'd like to offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 672,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 673,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 674,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 675,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 677,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 678,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 679,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 680,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 682,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 683,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 685,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 686,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 687,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 688,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 690,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 691,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 692,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 694,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 696,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 700,
+                "parameters": [
+                    "I've been using condoms ever since I"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 701,
+                "parameters": [
+                    "started being sexually active."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 703,
+                "parameters": [
+                    "They work great, and I intend on keeping to"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 704,
+                "parameters": [
+                    "use them even after surgery since I'm "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 705,
+                "parameters": [
+                    "non-monogamous."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 707,
+                "parameters": [
+                    "Its failure rate is too high for me to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 708,
+                "parameters": [
+                    "feel comfortable relying purely on it tho."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 710,
+                "parameters": [
+                    "It's true that while it's very effective, "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 711,
+                "parameters": [
+                    "it is not the *most* reliable method out "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 712,
+                "parameters": [
+                    "there."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 714,
+                "parameters": [
+                    "What about the pill then? Or an hormonal "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 715,
+                "parameters": [
+                    "IUD?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 717,
+                "parameters": [
+                    "I've used the pill for a while. It had"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 718,
+                "parameters": [
+                    "disastrous side-effets on my mood and my"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 719,
+                "parameters": [
+                    "overall mental health."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 721,
+                "parameters": [
+                    "I was super irritable, and often depressed."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 722,
+                "parameters": [
+                    "I feel much better since I stopped."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 724,
+                "parameters": [
+                    "That's understandable. Lots of people have "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 725,
+                "parameters": [
+                    "a pretty negative experience with the pill."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 727,
+                "parameters": [
+                    "Yes. And for that same reason, I won't "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 728,
+                "parameters": [
+                    "consider getting a hormonal IUD, or using "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 729,
+                "parameters": [
+                    "anything that is hormone-based."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 731,
+                "parameters": [
+                    "I can see how that would be a hard limit "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 732,
+                "parameters": [
+                    "for you."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 734,
+                "parameters": [
+                    "Although I have to say, the amount of "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 735,
+                "parameters": [
+                    "hormones found in an IUD are very very low. "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 736,
+                "parameters": [
+                    "You have low chances of experiencing the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 737,
+                "parameters": [
+                    "same problems, whatever they were."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 739,
+                "parameters": [
+                    "That's good to know. I'd still prefer a "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 740,
+                "parameters": [
+                    "permanent method where I never have to "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 741,
+                "parameters": [
+                    "think again about contraception."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 743,
+                "parameters": [
+                    "And I would never have to think about it "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 744,
+                "parameters": [
+                    "again."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 746,
+                "parameters": [
+                    "Ok. Here's what I'll offer you:"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 748,
+                "parameters": [
+                    "Here's a pamphlet on IUDs. I'd really like "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 749,
+                "parameters": [
+                    "for you to take a week or two to think "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 750,
+                "parameters": [
+                    "about it and seriously consider this "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 751,
+                "parameters": [
+                    "option."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 753,
+                "parameters": [
+                    "An IUD is very low maintenance. You just "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 754,
+                "parameters": [
+                    "have to change it every 5 years, and then "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 755,
+                "parameters": [
+                    "you don't need to worry about it for the "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 756,
+                "parameters": [
+                    "next 5 years."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 758,
+                "parameters": [
+                    "It has most of the benefits of a salpin-"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 759,
+                "parameters": [
+                    "gectomy, on top of being reversible."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 761,
+                "parameters": [
+                    "Plus, a hormonal one would actually  "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 762,
+                "parameters": [
+                    "decrease the effects of your period, which"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 763,
+                "parameters": [
+                    "I hear are not that bad but are still an"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 764,
+                "parameters": [
+                    "inconvenience."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 766,
+                "parameters": [
+                    "If in a week, you're still very confident "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 767,
+                "parameters": [
+                    "about wanting the salpingectomy and nothing "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 768,
+                "parameters": [
+                    "else, then I'll happily proceed with it."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 770,
+                "parameters": [
+                    "Does that sound good to you?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 772,
+                "parameters": [
+                    "Yeah, it does. Let's do things that way."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 786,
+                "parameters": [
+                    "Good afternoon Erwan."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 791,
+                "parameters": [
+                    "I read here in your file that your doctor"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 792,
+                "parameters": [
+                    "prescribed you a vasectomy."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 793,
+                "parameters": [
+                    "Is that correct?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 795,
+                "parameters": [
+                    "That's correct."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 797,
+                "parameters": [
+                    "You know that conjugality changes, right?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 799,
+                "parameters": [
+                    "Excuse me?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 801,
+                "parameters": [
+                    "I mean, you know you might break-up and be"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 802,
+                "parameters": [
+                    "with someone else in the future?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 803,
+                "parameters": [
+                    [
+                        "Yes"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 808,
+                "parameters": [
+                    "Good, good."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 810,
+                "parameters": [
+                    "And you are aware that this is a permanent "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 811,
+                "parameters": [
+                    "method of contraception?"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 812,
+                "parameters": [
+                    [
+                        "Yes"
+                    ],
+                    1,
+                    0,
+                    2,
+                    0
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 817,
+                "parameters": [
+                    "Excellent."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 819,
+                "parameters": [
+                    "Some people assume it's reversible. It is"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 820,
+                "parameters": [
+                    "to some degree, but there is a significant "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 821,
+                "parameters": [
+                    "number of men who reverse their vasectomy "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 822,
+                "parameters": [
+                    "and are infertile."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 824,
+                "parameters": [
+                    "The longer you are vasectomized, the higher "
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 825,
+                "parameters": [
+                    "the chances that you can't ever conceive a"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 826,
+                "parameters": [
+                    "child."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 828,
+                "parameters": [
+                    "But if you're aware of all of that, we can"
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 829,
+                "parameters": [
+                    "proceed. I'm adding you to the waitlist."
+                ]
+            },
+            {
+                "event": 2,
+                "page": 0,
+                "index": 830,
+                "parameters": [
+                    "You'll be called when it'll be your turn."
+                ]
+            }
+        ],
+        "MAP002": []
+    },
+    "custom": {}
+}
